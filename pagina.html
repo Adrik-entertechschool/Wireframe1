@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportZone - Marca Deportiva Universal</title>
+    <link rel="stylesheet" href="pagina.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="index.html/imagenes/isotipo1.jpeg" alt="">
+                    <span>VORX</span>
+                </div>
+                <div class="slogan">
+                    <span>IT´S IN YOU</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#nosotros" class="nav-link">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#hombre" class="nav-link">Hombre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#mujer" class="nav-link">Mujer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#niños" class="nav-link">Niños</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="kampo" class="nav-link">Kampo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="deportes" class="nav-link">Deportes</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Hero Section with Slider -->
+    <main class="hero-section">
+        <div class="slider-container">
+            <div class="slide active">
+                <div class="slide-content">
+                    <img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/8d9c6cd4-f4f4-4b65-a16d-defb42e75ebe/%C2%BFqu%C3%A9-diferencia-hay-entre-el-running-y-el-jogging.jpg"
+                        alt="Colección deportiva de alto rendimiento" class="slide-image">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-text">
+                        <h1>Rendimiento Sin Límites</h1>
+                        <p>Descubre nuestra nueva colección de ropa deportiva diseñada para atletas que buscan la
+                            excelencia</p>
+                        <button class="cta-button">Explorar Colección</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/9ac31def-64da-414e-9870-f978e1e5ffb3/siete-consejos-para-hacer-running-de-noche-con-seguridad.jpg"
+                        alt="Tecnología avanzada en ropa deportiva" class="slide-image">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-text">
+                        <h1>Tecnología Avanzada</h1>
+                        <p>Materiales de última generación que se adaptan a tu cuerpo y potencian tu rendimiento</p>
+                        <button class="cta-button">Ver Tecnología</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="https://i0.wp.com/panamericanworld.com/wp-content/uploads/2023/12/ropa-deportiva.jpg?resize=900%2C675&ssl=1"
+                        alt="Estilo universal para todos los deportistas" class="slide-image">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-text">
+                        <h1>Estilo Universal</h1>
+                        <p>Diseños únicos que combinan funcionalidad y moda para todos los deportistas</p>
+                        <button class="cta-button">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="slider-nav">
+                <button class="prev-btn" onclick="changeSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="next-btn" onclick="changeSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Slider Indicators -->
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Promotional Sections -->
+    <section class="promo-section">
+        <div class="container">
+            <div class="promo-grid">
+                <!-- Promociones -->
+                <div class="promo-card promo-left">
+                    <div class="promo-content">
+                        <div class="promo-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <h3>Promociones Especiales</h3>
+                        <p>Hasta 50% de descuento en productos seleccionados</p>
+                        <div class="promo-features">
+                            <div class="feature">
+                                <i class="fas fa-tshirt"></i>
+                                <span>Camisetas deportivas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-running"></i>
+                                <span>Calzado running</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Accesorios gym</span>
+                            </div>
+                        </div>
+                        <button class="promo-btn">Ver Promociones</button>
+                    </div>
+                    <div class="promo-image">
+                        <div class="promo-bg promo-bg-1"></div>
+                    </div>
+                </div>
+
+                <!-- Ofertas -->
+                <div class="promo-card promo-right">
+                    <div class="promo-content">
+                        <div class="promo-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Ofertas Exclusivas</h3>
+                        <p>Productos premium con precios únicos por tiempo limitado</p>
+                        <div class="promo-features">
+                            <div class="feature">
+                                <i class="fas fa-star"></i>
+                                <span>Productos premium</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>Tiempo limitado</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-shipping-fast"></i>
+                                <span>Envío gratis</span>
+                            </div>
+                        </div>
+                        <button class="promo-btn">Ver Ofertas</button>
+                    </div>
+                    <div class="promo-image">
+                        <div class="promo-bg promo-bg-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>VORX</h4>
+                    <p>No importa donde empiezas, sino cuanto estas dispuesto a romper tus limites.</p>
+                    <p>Tu Marca Deportiva de Confianza.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#hombre">Hombre</a></li>
+                        <li><a href="#mujer">Mujer</a></li>
+                        <li><a href="#niños">Niños</a></li>
+                        <li><a href="#kampo">Kampo</a></li>
+                        <li><a href="#deportes">Deportes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Slider functionality
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+        }
+
+        function changeSlide(direction) {
+            currentSlideIndex += direction;
+
+            if (currentSlideIndex >= slides.length) {
+                currentSlideIndex = 0;
+            } else if (currentSlideIndex < 0) {
+                currentSlideIndex = slides.length - 1;
+            }
+
+            showSlide(currentSlideIndex);
+        }
+
+        function currentSlide(index) {
+            currentSlideIndex = index - 1;
+            showSlide(currentSlideIndex);
+        }
+
+        // Auto slide
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
